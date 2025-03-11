@@ -78,5 +78,26 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km2\n", densidadePopulacional2);
     printf("PIB per Capita: %.2f reais\n", pibPerCapita2);
 
+
+    
+    printf("----------Comparação de Cartas:----------\n");
+    int populacaoVencedora = populacao1 > populacao2;
+    printf("População: Carta %d venceu (%d)\n", 2 -populacaoVencedora, populacaoVencedora );
+    int areaVencedora = area1 > area2;
+    printf("Area: Carta %d venceu (%d)\n", 2 -areaVencedora, areaVencedora );
+    int pibVencedor = pib1 > pib2;
+    printf("PIB: Carta %d venceu (%d)\n", 2 -pibVencedor, pibVencedor );
+    int pontosVencedor = pontosTuristicos1 > pontosTuristicos2;
+    printf("Pontos Turisticos: Carta %d venceu (%d)\n", 2 -pontosVencedor, pontosVencedor );
+    int densidadeVencedora = densidadePopulacional1 < densidadePopulacional2;
+    printf("Densidade Demografica: Carta %d venceu (%d)\n", 2 -densidadeVencedora, densidadeVencedora );
+    int pibPerCapitaVencedor = pibPerCapita1 > pibPerCapita2;
+    printf("PIB per Capita: Carta %d venceu (%d)\n", 2 -pibPerCapitaVencedor, pibPerCapitaVencedor );
+    int superPoderVencedor = superPoder1 > superPoder2;
+    printf("Super Poder: Carta %d venceu (%d)\n", 2 -superPoderVencedor, superPoderVencedor );
+
+
+
+
     return 0;
 }
