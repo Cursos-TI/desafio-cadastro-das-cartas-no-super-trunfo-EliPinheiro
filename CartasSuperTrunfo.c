@@ -96,6 +96,15 @@ int main() {
     int superPoderVencedor = superPoder1 > superPoder2;
     printf("Super Poder: Carta %d venceu (%d)\n", 2 -superPoderVencedor, superPoderVencedor );
 
+    printf("*******Comparação por área*******\n");
+    printf("Carta 1 - %s : %.2f\n", &estado1,  area1);
+    printf("Carta 2 - %s : %.2f\n", &estado2, area2);
+
+    if (area1 > area2) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", &estado1);
+    }else {
+        printf("Resultado: Carta 2 (%s) venceu!\n", &estado2);
+    }
 
 
 
